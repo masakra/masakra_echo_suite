@@ -7,7 +7,7 @@ build:
 	${REBAR} compile
 
 node:
-	cd rel && ${REBAR} create-node nodeid=echoserver
+	mkdir -p rel && cd rel && ${REBAR} create-node nodeid=echoserver
 
 clean:
 	rm -rf rel/*
