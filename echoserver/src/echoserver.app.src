@@ -1,0 +1,17 @@
+{application, echoserver,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {modules, [
+			 echoserver_app,
+			 echoserver_sup,
+			 echoserver
+			]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { echoserver_app, []}},
+  {env, []}
+ ]}.
